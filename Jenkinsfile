@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('UnitTest') {
       steps {
-        hygieiaBuildPublishStep(buildStatus: 'success')
-        sh 'mvn clean install'
+        sh 'mvn install'
         sh 'mvn test'
       }
     }
