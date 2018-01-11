@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('UnitTest') {
+    stage('artifactPublish') {
       steps {
-        sh 'mvn install'
+        hygieiaArtifactPublishStep(artifactName: 'DemonPJ-0.0.1-SNAPSHOT', artifactDirectory: '\\target', artifactGroup: 'com.pj', artifactVersion: '0.0.1-SNAPSHOT')
       }
     }
   }
