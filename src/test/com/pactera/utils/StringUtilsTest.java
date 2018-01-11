@@ -12,7 +12,7 @@ public class StringUtilsTest {
 	public void testIsEmpty() {
 		String emptyStr = "";
 		String nullStr = null;
-		
+		System.out.print("test...");
 		assertTrue(StringUtils.isEmpty(emptyStr));
 		assertTrue(StringUtils.isEmpty(nullStr));
 	}
